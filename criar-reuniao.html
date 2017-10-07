@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Trajano Reuter">
+        <title>Criar uma reunião</title>
+
+        <!--CSS imports-->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <link rel="stylesheet" type="text/css" href="css/style2.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive-style2.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/hover-min.css" media="all">
+
+    </head>
+    <body>
+
+        <header class="active">
+            <div class="container">
+                <nav class="desk hidden-xs">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-4">
+                            <ul class="list-unstyled list-inline">
+                                <li><a class="logo" href="index.html"><img src="img/otherpages/logo.png" alt="" class="logo"></a></li>
+                                <li class="menu">Menu</li>
+                                <div class="menu-drop">
+                                    <div class="x">
+                                    <p>Careca</p>
+                                    <p>Careca</p>
+                                    <p>Careca</p>
+                                    <p>Careca</p>
+                                    <p>Careca</p>
+                                    <p>Careca</p>
+                                    <p>Careca</p>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="col-md-7 col-sm-8">
+                            <div class="row">
+                                <div class="col-md-8 col-sm-5">
+                                    <img src="img/otherpages/lupa.png" alt="" class="lupa">
+                                    <form action="" method="POST">
+                                        <input type="text" placeholder="Encontre um Contato">
+                                    </form>
+                                </div>
+                                <div class="col-md-1 col-sm-2 text-center">
+                                    <a href="#"><img src="img/otherpages/sino.png" alt="" class="sino"></a>
+                                </div>
+                                <div class="col-md-1 col-sm-2 text-center">
+                                    <a href="#"><img src="img/otherpages/profile.png" alt="" class="profile"></a>
+                                </div>
+                                <div class="col-md-2 col-sm-3 text-center">
+                                    <a class="exit" href="#"><p>Sair<img src="img/otherpages/exit.png" alt="" class="exit"></p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <nav class="mobile visible-xs">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <a class="logo" href="index.html"><img src="img/otherpages/logo.png" alt="" class="logo"></a>
+                        </div>
+                        <div class="col-xs-8">
+                            <form action="" method="POST">
+                                <input type="text" placeholder="Encontre um Contato">
+                            </form>
+                            <button type="button" id="mobile-btn"></button>
+                            <button type="button" id="lupa-btn"></button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div id="menu-mobile" class="visible-xs">
+            <div class="row text-center">
+                <div class="col-xs-12">
+                    <a href="#"><img src="img/otherpages/profile.png" alt="" class="profile"></a>
+                    <h3>Menu</h3>
+                    <ul class="list-unstyled list-inline">
+                        <a href="#"><li>Careca</li></a>
+                        <a href="#"><li>Careca</li></a>
+                        <a href="#"><li>Careca</li></a>
+                        <a href="#"><li>Careca</li></a>
+                        <a href="#"><li>Careca</li></a>
+                        <a href="#"><li>Careca</li></a>
+                        <a href="#"><li><img src="img/otherpages/sino.png" alt="" class="sino"></li></a>
+                    </ul>
+                    <a class="exit" href="#"><h3>Sair</h3></a>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <h3>Gestor financeiro</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="lcbox">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <h4>Cadastrar reunião</h4>
+                                </div>
+                            </div>
+                           <form action="" method="POST">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <label for="evento">Nome do evento</label>
+                                        <input type="text" placeholder="Nome do evento">
+                                        <label for="tipo">Tipo de Evento</label>
+                                        <select name="tipo" id="tipo">
+                                            <option value="">Selecione o tipo do evento</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <label for="data">Data</label>
+                                        <input id="data" name="data" type="text" placeholder="--/--/--">
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <label for="hora">Hora</label>
+                                        <input id="hora" name="hora" type="text" placeholder="--:--">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <label for="endereco">Data</label>
+                                        <input id="endereco" name="endereco" type="text" placeholder="Avenida Francisco Glicério, 345">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <button type="button" class="cancel">Cancelar</button>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <button type="submit" class="submit">Salvar</button>
+                                    </div>
+                                </div>
+                           </form>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-xs-12">
+                        <div class="rcbox">
+                            <div class="header">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <h4>Convidar contatos</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divisionbar"></div>
+                            <form action="" method="POST">
+                                <div class="action-header">
+                                    <div class="row">
+                                        <div class="col-md-1 col-sm-1 col-xs-2">
+                                            <p>Ação</p>
+                                        </div>
+                                        <div class="col-md-2 col-sm-2 col-xs-4">
+                                            <select name="acao" id="acao">
+                                                <option value="Ação">Selecione</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-9 col-sm-9 col-xs-6"></div>
+                                    </div>
+                                </div>
+                                <div class="action-body">
+                                    <div class="row item"><!--item-->
+                                        <div class="col-md-1 col-sm-1 col-xs-12 center">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value=""></label>
+                                            </div>
+                                            <div class="xxx visible-xs">
+                                                <a href="#face?" target="_blank"><img class="face" src="img/otherpages/facebook.png" alt=""></a>
+                                                <a href="#profile?" target="_blank"><img src="img/otherpages/profile.png" alt="" class="profile"></a>
+                                        </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-2 hidden-xs">
+                                            <a href="#face?" target="_blank"><img class="face" src="img/otherpages/facebook.png" alt=""></a>
+                                            <a href="#profile?" target="_blank"><img src="img/otherpages/profile.png" alt="" class="profile"></a>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-12 center">
+                                            <p class="t1">Renato Martins</p>
+                                            <div class="o"></div>
+                                            <p class="t2">Status</p>
+                                        </div>
+                                        <div class="col-md-5 col-sm-5 col-xs-12 text-center">
+                                            <button class="btn1" type="button"></button>
+                                            <button class="btn2" type="button"></button>
+                                            <button class="btn3" type="button"></button>
+                                            <button class="btn4" type="button"></button>
+                                            <button class="btn5" type="button"></button>
+                                        </div>
+                                    </div><!--item-->
+                                    <div class="row item"><!--item-->
+                                        <div class="col-md-1 col-sm-1 col-xs-12 center">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value=""></label>
+                                            </div>
+                                            <div class="xxx visible-xs">
+                                                <a href="#face?" target="_blank"><img class="face" src="img/otherpages/facebook.png" alt=""></a>
+                                                <a href="#profile?" target="_blank"><img src="img/otherpages/profile.png" alt="" class="profile"></a>
+                                        </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-2 hidden-xs">
+                                            <a href="#face?" target="_blank"><img class="face" src="img/otherpages/facebook.png" alt=""></a>
+                                            <a href="#profile?" target="_blank"><img src="img/otherpages/profile.png" alt="" class="profile"></a>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-12 center">
+                                            <p class="t1">Renato Martins</p>
+                                            <div class="o"></div>
+                                            <p class="t2">Status</p>
+                                        </div>
+                                        <div class="col-md-5 col-sm-5 col-xs-12 text-center">
+                                            <button class="btn1" type="button"></button>
+                                            <button class="btn2" type="button"></button>
+                                            <button class="btn3" type="button"></button>
+                                            <button class="btn4" type="button"></button>
+                                            <button class="btn5" type="button"></button>
+                                        </div>
+                                    </div><!--item-->
+                                    <div class="row item"><!--item-->
+                                        <div class="col-md-1 col-sm-1 col-xs-12 center">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value=""></label>
+                                            </div>
+                                            <div class="xxx visible-xs">
+                                                <a href="#face?" target="_blank"><img class="face" src="img/otherpages/facebook.png" alt=""></a>
+                                                <a href="#profile?" target="_blank"><img src="img/otherpages/profile.png" alt="" class="profile"></a>
+                                        </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-2 hidden-xs">
+                                            <a href="#face?" target="_blank"><img class="face" src="img/otherpages/facebook.png" alt=""></a>
+                                            <a href="#profile?" target="_blank"><img src="img/otherpages/profile.png" alt="" class="profile"></a>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-12 center">
+                                            <p class="t1">Renato Martins</p>
+                                            <div class="o"></div>
+                                            <p class="t2">Status</p>
+                                        </div>
+                                        <div class="col-md-5 col-sm-5 col-xs-12 text-center">
+                                            <button class="btn1" type="button"></button>
+                                            <button class="btn2" type="button"></button>
+                                            <button class="btn3" type="button"></button>
+                                            <button class="btn4" type="button"></button>
+                                            <button class="btn5" type="button"></button>
+                                        </div>
+                                    </div><!--item-->
+                                    <div class="row item"><!--item-->
+                                        <div class="col-md-1 col-sm-1 col-xs-12 center">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value=""></label>
+                                            </div>
+                                            <div class="xxx visible-xs">
+                                                <a href="#face?" target="_blank"><img class="face" src="img/otherpages/facebook.png" alt=""></a>
+                                                <a href="#profile?" target="_blank"><img src="img/otherpages/profile.png" alt="" class="profile"></a>
+                                        </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-2 hidden-xs">
+                                            <a href="#face?" target="_blank"><img class="face" src="img/otherpages/facebook.png" alt=""></a>
+                                            <a href="#profile?" target="_blank"><img src="img/otherpages/profile.png" alt="" class="profile"></a>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-12 center">
+                                            <p class="t1">Renato Martins</p>
+                                            <div class="o"></div>
+                                            <p class="t2">Status</p>
+                                        </div>
+                                        <div class="col-md-5 col-sm-5 col-xs-12 text-center">
+                                            <button class="btn1" type="button"></button>
+                                            <button class="btn2" type="button"></button>
+                                            <button class="btn3" type="button"></button>
+                                            <button class="btn4" type="button"></button>
+                                            <button class="btn5" type="button"></button>
+                                        </div>
+                                    </div><!--item-->
+                                    <div class="row item"><!--item-->
+                                        <div class="col-md-1 col-sm-1 col-xs-12 center">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value=""></label>
+                                            </div>
+                                            <div class="xxx visible-xs">
+                                                <a href="#face?" target="_blank"><img class="face" src="img/otherpages/facebook.png" alt=""></a>
+                                                <a href="#profile?" target="_blank"><img src="img/otherpages/profile.png" alt="" class="profile"></a>
+                                        </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-2 hidden-xs">
+                                            <a href="#face?" target="_blank"><img class="face" src="img/otherpages/facebook.png" alt=""></a>
+                                            <a href="#profile?" target="_blank"><img src="img/otherpages/profile.png" alt="" class="profile"></a>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-12 center">
+                                            <p class="t1">Renato Martins</p>
+                                            <div class="o"></div>
+                                            <p class="t2">Status</p>
+                                        </div>
+                                        <div class="col-md-5 col-sm-5 col-xs-12 text-center">
+                                            <button class="btn1" type="button"></button>
+                                            <button class="btn2" type="button"></button>
+                                            <button class="btn3" type="button"></button>
+                                            <button class="btn4" type="button"></button>
+                                            <button class="btn5" type="button"></button>
+                                        </div>
+                                    </div><!--item-->
+                                    <div class="row item"><!--item-->
+                                        <div class="col-md-1 col-sm-1 col-xs-12 center">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value=""></label>
+                                            </div>
+                                            <div class="xxx visible-xs">
+                                                <a href="#face?" target="_blank"><img class="face" src="img/otherpages/facebook.png" alt=""></a>
+                                                <a href="#profile?" target="_blank"><img src="img/otherpages/profile.png" alt="" class="profile"></a>
+                                        </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-2 hidden-xs">
+                                            <a href="#face?" target="_blank"><img class="face" src="img/otherpages/facebook.png" alt=""></a>
+                                            <a href="#profile?" target="_blank"><img src="img/otherpages/profile.png" alt="" class="profile"></a>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-12 center">
+                                            <p class="t1">Renato Martins</p>
+                                            <div class="o"></div>
+                                            <p class="t2">Status</p>
+                                        </div>
+                                        <div class="col-md-5 col-sm-5 col-xs-12 text-center">
+                                            <button class="btn1" type="button"></button>
+                                            <button class="btn2" type="button"></button>
+                                            <button class="btn3" type="button"></button>
+                                            <button class="btn4" type="button"></button>
+                                            <button class="btn5" type="button"></button>
+                                        </div>
+                                    </div><!--item-->
+                                    <div class="row item"><!--item-->
+                                        <div class="col-md-1 col-sm-1 col-xs-12 center">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value=""></label>
+                                            </div>
+                                            <div class="xxx visible-xs">
+                                                <a href="#face?" target="_blank"><img class="face" src="img/otherpages/facebook.png" alt=""></a>
+                                                <a href="#profile?" target="_blank"><img src="img/otherpages/profile.png" alt="" class="profile"></a>
+                                        </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-2 hidden-xs">
+                                            <a href="#face?" target="_blank"><img class="face" src="img/otherpages/facebook.png" alt=""></a>
+                                            <a href="#profile?" target="_blank"><img src="img/otherpages/profile.png" alt="" class="profile"></a>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-12 center">
+                                            <p class="t1">Renato Martins</p>
+                                            <div class="o"></div>
+                                            <p class="t2">Status</p>
+                                        </div>
+                                        <div class="col-md-5 col-sm-5 col-xs-12 text-center">
+                                            <button class="btn1" type="button"></button>
+                                            <button class="btn2" type="button"></button>
+                                            <button class="btn3" type="button"></button>
+                                            <button class="btn4" type="button"></button>
+                                            <button class="btn5" type="button"></button>
+                                        </div>
+                                    </div><!--item-->
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Javascript imports-->
+        <script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8" ></script>
+        <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8" ></script>
+        <script src="js/effects.js" type="text/javascript" charset="utf-8" ></script>
+
+    </body>
+</html>
+

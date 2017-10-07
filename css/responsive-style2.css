@@ -1,0 +1,185 @@
+@media only screen and (max-width: 1186px){
+    .rcbox form .action-body .item button{
+        margin-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 988px){
+    section .my-data-box button.cancel{
+        margin-bottom: 15px;
+        margin-top: 30px;
+    }
+    .meeting-box .month .month-body .pics-pos img:first-child{
+        right: 80px;
+    }
+
+    .meeting-box .month .month-body .pics-pos img:nth-child(2){
+        right: 60px;
+    }
+
+    .meeting-box .month .month-body .pics-pos img:nth-child(3){
+        right: 40px;
+    }
+    .meeting-box .month .month-body .pics-pos button{
+        right: 20px;
+    }
+    .contact-box .contact-filter button{
+        margin-bottom: 15px;
+    }
+    .contact-box .action-filter .item-t-ac .item p.t3{
+        font-size: .9em;
+    }
+    .contact-box .action-filter .item-t-ac .item img.profile{
+        width: 35px;
+        height: 35px;
+        margin-top: 25px;
+    }
+    .rcbox form .action-body .item img.profile{
+        width: 35px;
+        height: 35px;
+        margin-top: 15px;
+    }
+    .contact-box .action-filter .item-t-ac .item img.face{
+        left: calc(50% + 15px);
+    }
+    .rfbox .table-body .item p.t1, .rfbox .table-body .item p.t2, .rfbox .table-body .item p.t3{
+        font-size: 1.1em;
+    }
+    .rcbox form .action-body .item button{
+        margin-right: 10px;
+        width: 16px;
+        height: 16px;
+    }
+    .plbox .photo-box{
+        height: 80px;
+        width: 80px;
+    }
+    .plbox input.input1{
+        padding-left: 85px;
+    }
+    .plbox .pic-input{
+        left: 65px;
+    }
+    .plbox label.input2{
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    section .my-data-box h4, .meeting-box .month .month-body p.t2, .meeting-box .month .month-body p.t3, .meeting-box .month .month-body p.t4{
+        text-align: center;
+    }
+    section .my-data-box button.submit{
+        margin-bottom: 30px;
+    }
+    header{
+        position: fixed;
+        top: 0;
+    }
+    section{
+        margin-top: 80px;
+    }
+    section.meeting{
+        margin-top: 95px;
+    }
+    .meeting-box .month .month-body button.invite{
+        margin-top: 90px;
+    }
+    .meeting-box .month .month-body p.t1{
+        margin-top: 15px;
+    }
+    .meeting-box .month .month-body .pics-pos img:first-child{
+        right: calc(50%);
+    }
+
+    .meeting-box .month .month-body .pics-pos img:nth-child(2){
+        right: calc(50% - 20px);
+    }
+
+    .meeting-box .month .month-body .pics-pos img:nth-child(3){
+        right: calc(50% - 40px);
+    }
+    .meeting-box .month .month-body .pics-pos button{
+        right: calc(50% - 55px);
+    }
+    .meeting-box .month .month-body .line{
+        width: 100%;
+    }
+    .center{
+        text-align: center;
+    }
+    .contact-box .contact-filter input, select{
+        margin-bottom: 15px;
+    }
+    .contact-box .contact-filter button{
+        position: absolute;
+        right: 15px;
+        top: 0;
+    }
+    .contact-box .action-filter .item-t-ac .item .o{
+        left: calc(50% - 25px);
+    }
+    .contact-box .action-filter .item-t-ac .item p.t3{
+        font-size: 1.1em;
+    }
+    .contact-box .action-filter .item-t-ac .item .checkbox{
+        margin-left: -25px;
+    }
+    .lfbox button.cancel{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .rfbox .table-body .item p.t2{
+        margin-top: 15px;
+    }
+    .rfbox .table-body .item p.t1, .rfbox .table-body .item p.t2, .rfbox .table-body .item p.t3{
+        font-size: .8em;
+    }
+    .contact-box .action-filter .item-t-ac .item img.profile{
+        width: 45px;
+        height: 45px;
+        margin-top: 20px;
+    }
+    .rcbox form .action-body .item img.profile{
+        width: 45px;
+        height: 45px;
+    }
+    .rcbox form .action-body .item img.face{
+        left: calc(50% + 10px);
+    }
+
+    .rcbox form .action-body .item .checkbox{
+        margin-left: -25px;
+    }
+   .rcbox form .action-body .item .o{
+        left: calc(50% - 25px);
+    }
+    .rcbox form .action-body .item button{
+        float: none;
+        height: 24px;
+        width: 24px;
+    }
+
+}
+
+@media only screen and (max-width: 484px){
+    .prbox .body .reunioes-body .item .parts .part3 .btnxy{
+        margin-top: 20px;
+    }
+    .prbox .body .reunioes-body .item .parts .part1{
+        width: 20%;
+    }
+    .prbox .body .reunioes-body .item .parts .part2{
+        width: 60%;
+        left: 20%;
+    }
+    .prbox .body .reunioes-body .item .parts{
+        height: 140px;
+    }
+}
+
+@media only screen and (max-width: 339px){
+    .contact-box .contact-filter label{
+        font-size: .8em;
+    }
+}

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Trajano Reuter">
+        <title>Perfil do contato</title>
+
+        <!--CSS imports-->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <link rel="stylesheet" type="text/css" href="css/style2.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive-style2.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/hover-min.css" media="all">
+
+    </head>
+    <body>
+
+        <header class="active">
+            <div class="container">
+                <nav class="desk hidden-xs">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-4">
+                            <ul class="list-unstyled list-inline">
+                                <li><a class="logo" href="index.html"><img src="img/otherpages/logo.png" alt="" class="logo"></a></li>
+                                <li class="menu">Menu</li>
+                                <div class="menu-drop">
+                                    <div class="x">
+                                    <p>Careca</p>
+                                    <p>Careca</p>
+                                    <p>Careca</p>
+                                    <p>Careca</p>
+                                    <p>Careca</p>
+                                    <p>Careca</p>
+                                    <p>Careca</p>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="col-md-7 col-sm-8">
+                            <div class="row">
+                                <div class="col-md-8 col-sm-5">
+                                    <img src="img/otherpages/lupa.png" alt="" class="lupa">
+                                    <form action="" method="POST">
+                                        <input type="text" placeholder="Encontre um Contato">
+                                    </form>
+                                </div>
+                                <div class="col-md-1 col-sm-2 text-center">
+                                    <a href="#"><img src="img/otherpages/sino.png" alt="" class="sino"></a>
+                                </div>
+                                <div class="col-md-1 col-sm-2 text-center">
+                                    <a href="#"><img src="img/otherpages/profile.png" alt="" class="profile"></a>
+                                </div>
+                                <div class="col-md-2 col-sm-3 text-center">
+                                    <a class="exit" href="#"><p>Sair<img src="img/otherpages/exit.png" alt="" class="exit"></p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <nav class="mobile visible-xs">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <a class="logo" href="index.html"><img src="img/otherpages/logo.png" alt="" class="logo"></a>
+                        </div>
+                        <div class="col-xs-8">
+                            <form action="" method="POST">
+                                <input type="text" placeholder="Encontre um Contato">
+                            </form>
+                            <button type="button" id="mobile-btn"></button>
+                            <button type="button" id="lupa-btn"></button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div id="menu-mobile" class="visible-xs">
+            <div class="row text-center">
+                <div class="col-xs-12">
+                    <a href="#"><img src="img/otherpages/profile.png" alt="" class="profile"></a>
+                    <h3>Menu</h3>
+                    <ul class="list-unstyled list-inline">
+                        <a href="#"><li>Careca</li></a>
+                        <a href="#"><li>Careca</li></a>
+                        <a href="#"><li>Careca</li></a>
+                        <a href="#"><li>Careca</li></a>
+                        <a href="#"><li>Careca</li></a>
+                        <a href="#"><li>Careca</li></a>
+                        <a href="#"><li><img src="img/otherpages/sino.png" alt="" class="sino"></li></a>
+                    </ul>
+                    <a class="exit" href="#"><h3>Sair</h3></a>
+                </div>
+            </div>
+        </div>
+
+        <section class="contacts">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                        <h3>Perfil do contato</h3>
+                    </div>
+                    <div class="col-xs-3 visible-xs"></div>
+                    <div class="col-md-4 col-sm-6 col-xs-9">
+                        <p class="t1 floatr">Adicionar Contato<button class="new-create" type="button">+</button></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="plbox">
+                            <form action="" method="POST">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="photo-box text-center">
+                                            <img class="img-circle" src="img/otherpages/pp.jpg" alt="">
+                                        </div>
+                                        <div class="pic-input">
+                                            <img src="img/otherpages/edit.png" alt="">
+                                            <input type="file" name="pic" accept="image/*">
+                                        </div>
+                                        <input class="input1" type="text" id="nome" name="nome" placeholder="Renato Martins">
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6"></div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <select class="status" name="status" id="">
+                                            <option value="">Status</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <img src="img/otherpages/placeholder.png" alt="" class="placeholder">
+                                        <label class="input2"  for="endereco">Endereço</label>
+                                        <input class="input2" type="text" name="endereco" id="endereco" placeholder="Avenida Francisco Glicério, 345">
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <img src="img/otherpages/phone.png" alt="" class="phone">
+                                        <label for="telefone">Telefone</label>
+                                        <input class="input3" type="text" name="telefone" id="telefone" placeholder="49 2345-5677">
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <label for="afinidadeinput">Nota de Afinidade</label>
+                                        <input class="none" value="morno" type="text" name="afinidade" id="afinidadeinput">
+                                        <div class="slide-bar-box">
+                                            <button class="afinidade frio" type="button"></button>
+                                            <button class="afinidade morno" type="button"></button>
+                                            <button class="afinidade quente" type="button"></button>
+                                            <div class="bar">
+                                                <img src="img/otherpages/triang.png" alt="" class="triang frio">
+                                            </div>
+                                            <p class="frio">Frio</p><p class="morno">Morno</p><p class="quente">Quente</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <label for="empreendedorismoinput">Nota de Empreendedorismo</label>
+                                        <input class="none" value="1" type="text" name="empreendedorismo" id="empreendedorismoinput">
+                                        <div class="slide-bar-box">
+                                            <button class="empreendedorismo um" type="button"></button>
+                                            <button class="empreendedorismo dois" type="button"></button>
+                                            <button class="empreendedorismo tres" type="button"></button>
+                                            <button class="empreendedorismo quatro" type="button"></button>
+                                            <button class="empreendedorismo cinco" type="button"></button>
+                                            <div class="bar">
+                                                <img src="img/otherpages/triang.png" alt="" class="triang2 um">
+                                            </div>
+                                            <p class="um">1</p><p class="dois">2</p><p class="tres">3</p><p class="quatro">4</p><p class="cinco">5</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <button class="cancel" type="button">Cancelar</button>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <button class="submit" type="submit">Salvar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-xs-12">
+                        <div class="prbox">
+                            <div class="header">
+                                <div class="row text-center">
+                                    <div class="col-md-6 col-sm-6 col-xs-6 historico">
+                                        <h4>Histórico</h4>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6 reunioes">
+                                        <h4>Reuniões</h4>
+                                    </div>
+                                </div>
+                                <div class="posbar2"></div>
+                            </div>
+                            <div class="body"><!--body-->
+                                <div class="historico-body"><!--historico-body-->
+
+                                </div><!--historico-body-->
+                                <div class="reunioes-body active"><!--reunioes-body-->
+                                    <div class="item"><!--item-->
+                                        <div class="month">
+                                            <p>Abril</p>
+                                        </div>
+                                        <div class="parts"><!--parts-->
+                                            <div class="part1">
+                                                <p class="t1"><span>07</span><br>09:00 am</p>
+                                            </div>
+                                            <div class="part2">
+                                                <p class="t2">Reunião de metas</p>
+                                                <p class="t3">Reunião aberta</p>
+                                                <p class="t4">Av. Paulista, 1234 - São Paulo 01311-200</p>
+                                            </div>
+                                            <div class="part3 acpt">
+                                                <div class="btnxy">
+                                                    <button type="button" class="acpt active"></button>
+                                                    <button type="button" class="dnd"></button>
+                                                </div>
+                                            </div>
+                                        </div><!--parts-->
+                                        <div class="parts"><!--parts-->
+                                            <div class="part1">
+                                                <p class="t1"><span>07</span><br>09:00 am</p>
+                                            </div>
+                                            <div class="part2">
+                                                <p class="t2">Reunião de metas</p>
+                                                <p class="t3">Reunião aberta</p>
+                                                <p class="t4">Av. Paulista, 1234 - São Paulo 01311-200</p>
+                                            </div>
+                                            <div class="part3 acpt">
+                                                <div class="btnxy">
+                                                    <button type="button" class="acpt active"></button>
+                                                    <button type="button" class="dnd"></button>
+                                                </div>
+                                            </div>
+                                        </div><!--parts-->
+                                        <div class="parts"><!--parts-->
+                                            <div class="part1">
+                                                <p class="t1"><span>07</span><br>09:00 am</p>
+                                            </div>
+                                            <div class="part2">
+                                                <p class="t2">Reunião de metas</p>
+                                                <p class="t3">Reunião aberta</p>
+                                                <p class="t4">Av. Paulista, 1234 - São Paulo 01311-200</p>
+                                            </div>
+                                            <div class="part3 dnd">
+                                                <div class="btnxy">
+                                                    <button type="button" class="acpt"></button>
+                                                    <button type="button" class="dnd active"></button>
+                                                </div>
+                                            </div>
+                                        </div><!--parts-->
+                                    </div><!--item-->
+                                    <div class="item"><!--item-->
+                                        <div class="month">
+                                            <p>Maio</p>
+                                        </div>
+                                        <div class="parts"><!--parts-->
+                                            <div class="part1">
+                                                <p class="t1"><span>07</span><br>09:00 am</p>
+                                            </div>
+                                            <div class="part2">
+                                                <p class="t2">Reunião de metas</p>
+                                                <p class="t3">Reunião aberta</p>
+                                                <p class="t4">Av. Paulista, 1234 - São Paulo 01311-200</p>
+                                            </div>
+                                            <div class="part3 dnd">
+                                                <div class="btnxy">
+                                                    <button type="button" class="acpt"></button>
+                                                    <button type="button" class="dnd active"></button>
+                                                </div>
+                                            </div>
+                                        </div><!--parts-->
+                                        <div class="parts"><!--parts-->
+                                            <div class="part1">
+                                                <p class="t1"><span>07</span><br>09:00 am</p>
+                                            </div>
+                                            <div class="part2">
+                                                <p class="t2">Reunião de metas</p>
+                                                <p class="t3">Reunião aberta</p>
+                                                <p class="t4">Av. Paulista, 1234 - São Paulo 01311-200</p>
+                                            </div>
+                                            <div class="part3 dnd">
+                                                <div class="btnxy">
+                                                    <button type="button" class="acpt"></button>
+                                                    <button type="button" class="dnd active"></button>
+                                                </div>
+                                            </div>
+                                        </div><!--parts-->
+                                    </div><!--item-->
+                                </div><!--reunioes-body-->
+                            </div><!--body-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Javascript imports-->
+        <script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8" ></script>
+        <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8" ></script>
+        <script src="js/effects.js" type="text/javascript" charset="utf-8" ></script>
+
+    </body>
+</html>
+

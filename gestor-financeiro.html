@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Trajano Reuter">
+        <title>Gestor financeiro</title>
+
+        <!--CSS imports-->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <link rel="stylesheet" type="text/css" href="css/style2.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive-style2.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/hover-min.css" media="all">
+
+    </head>
+    <body>
+
+        <header class="active">
+            <div class="container">
+                <nav class="desk hidden-xs">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-4">
+                            <ul class="list-unstyled list-inline">
+                                <li><a class="logo" href="index.html"><img src="img/otherpages/logo.png" alt="" class="logo"></a></li>
+                                <li class="menu">Menu</li>
+                                <div class="menu-drop">
+                                    <div class="x">
+                                    <p>Careca</p>
+                                    <p>Careca</p>
+                                    <p>Careca</p>
+                                    <p>Careca</p>
+                                    <p>Careca</p>
+                                    <p>Careca</p>
+                                    <p>Careca</p>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="col-md-7 col-sm-8">
+                            <div class="row">
+                                <div class="col-md-8 col-sm-5">
+                                    <img src="img/otherpages/lupa.png" alt="" class="lupa">
+                                    <form action="" method="POST">
+                                        <input type="text" placeholder="Encontre um Contato">
+                                    </form>
+                                </div>
+                                <div class="col-md-1 col-sm-2 text-center">
+                                    <a href="#"><img src="img/otherpages/sino.png" alt="" class="sino"></a>
+                                </div>
+                                <div class="col-md-1 col-sm-2 text-center">
+                                    <a href="#"><img src="img/otherpages/profile.png" alt="" class="profile"></a>
+                                </div>
+                                <div class="col-md-2 col-sm-3 text-center">
+                                    <a class="exit" href="#"><p>Sair<img src="img/otherpages/exit.png" alt="" class="exit"></p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <nav class="mobile visible-xs">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <a class="logo" href="index.html"><img src="img/otherpages/logo.png" alt="" class="logo"></a>
+                        </div>
+                        <div class="col-xs-8">
+                            <form action="" method="POST">
+                                <input type="text" placeholder="Encontre um Contato">
+                            </form>
+                            <button type="button" id="mobile-btn"></button>
+                            <button type="button" id="lupa-btn"></button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div id="menu-mobile" class="visible-xs">
+            <div class="row text-center">
+                <div class="col-xs-12">
+                    <a href="#"><img src="img/otherpages/profile.png" alt="" class="profile"></a>
+                    <h3>Menu</h3>
+                    <ul class="list-unstyled list-inline">
+                        <a href="#"><li>Careca</li></a>
+                        <a href="#"><li>Careca</li></a>
+                        <a href="#"><li>Careca</li></a>
+                        <a href="#"><li>Careca</li></a>
+                        <a href="#"><li>Careca</li></a>
+                        <a href="#"><li>Careca</li></a>
+                        <a href="#"><li><img src="img/otherpages/sino.png" alt="" class="sino"></li></a>
+                    </ul>
+                    <a class="exit" href="#"><h3>Sair</h3></a>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <h3>Gestor financeiro</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="lfbox">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4>Cadastrar nova venda</h4>
+                                </div>
+                            </div>
+                            <form action="" method="POST">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <label for="cliente">Cliente</label>
+                                        <input class="inlp" type="text" id="cliente" name="cliente" placeholder="Encontrar um contato">
+                                        <img src="img/otherpages/lupa2.png" alt="" class="lupa">
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <label for="valor">Valor do Pedido</label>
+                                        <input type="text" id="valor" name="valor" placeholder="R$">
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <label for="data">Data</label>
+                                        <input type="text" id="data" name="data" placeholder="--/--/--">
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <button class="cancel" type="button">Cancelar</button>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <button class="submit" type="submit">Salvar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-xs-12">
+                        <div class="rfbox">
+                            <div class="header">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-6 abertos text-center">
+                                        <h4>Abertos</h4>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6 pagos text-center">
+                                        <h4>Pagos</h4>
+                                    </div>
+                                </div>
+                                <div class="posbar"></div>
+                            </div>
+                            <div class="filter"><!--filter-->
+                                <div class="row">
+                                    <form action="" method="POST">
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="col-md-7 col-sm-5 hidden-xs">
+                                                <img src="img/otherpages/calendar.png" alt="" class="calendar">
+                                            </div>
+                                            <div class="col-md-2 col-sm-2 col-xs-3">
+                                                <p>De</p>
+                                            </div>
+                                            <div class="col-md-3 col-sm-5 col-xs-6 text-center">
+                                                <input type="text" placeholder="--/--/--">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="col-md-2 col-sm-2 col-xs-3">
+                                                <p>Até</p>
+                                            </div>
+                                            <div class="col-md-3 col-sm-5 col-xs-6 text-center">
+                                                <input type="text" placeholder="--/--/--">
+                                            </div>
+                                            <div class="col-md-7 col-sm-5 col-xs-3">
+                                                <button>Filtrar</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div><!--filter-->
+                            <div class="table-header"><!--table-header-->
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <p class="t1">Data</p>
+                                    </div>
+                                    <div class="col-md-7 col-sm-7 col-xs-5">
+                                        <p>Cliente</p>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-5">
+                                        <p>Valor pedido</p>
+                                    </div>
+                                </div>
+                            </div><!--table-header-->
+                            <div class="table-body"><!--table-body-->
+                                <div class="abertos-body">
+                                    <div class="item"><!--item-->
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-2 text-center">
+                                                <p class="t1">07/04</p>
+                                            </div>
+                                            <div class="col-md-7 col-sm-7 col-xs-6">
+                                                <a href="#"><p class="t2"><img class="profile hidden-xs" src="img/otherpages/profile.png" alt="">Renato Martins</p></a>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-4">
+                                                <p class="t3">R$ 350,00</p>
+                                            </div>
+                                        </div>
+                                    </div><!--item-->
+                                    <div class="item"><!--item-->
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-2 text-center">
+                                                <p class="t1">07/04</p>
+                                            </div>
+                                            <div class="col-md-7 col-sm-7 col-xs-6">
+                                                <a href="#"><p class="t2"><img class="profile hidden-xs" src="img/otherpages/profile.png" alt="">Renato Martins</p></a>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-4">
+                                                <p class="t3">R$ 350,00</p>
+                                            </div>
+                                        </div>
+                                    </div><!--item-->
+                                </div>
+                                <div class="pagos-body active">
+                                    <div class="item"><!--item-->
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-2 text-center">
+                                                <p class="t1">07/04</p>
+                                            </div>
+                                            <div class="col-md-7 col-sm-7 col-xs-6">
+                                                <a href="#"><p class="t2"><img class="profile hidden-xs" src="img/otherpages/profile.png" alt="">Renato Martins</p></a>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-4">
+                                                <p class="t3">R$ 350,00</p>
+                                            </div>
+                                        </div>
+                                    </div><!--item-->
+                                    <div class="item"><!--item-->
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-2 text-center">
+                                                <p class="t1">07/04</p>
+                                            </div>
+                                            <div class="col-md-7 col-sm-7 col-xs-6">
+                                                <a href="#"><p class="t2"><img class="profile hidden-xs" src="img/otherpages/profile.png" alt="">Renato Martins</p></a>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-4">
+                                                <p class="t3">R$ 350,00</p>
+                                            </div>
+                                        </div>
+                                    </div><!--item-->
+                                    <div class="item"><!--item-->
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-2 text-center">
+                                                <p class="t1">07/04</p>
+                                            </div>
+                                            <div class="col-md-7 col-sm-7 col-xs-6">
+                                                <a href="#"><p class="t2"><img class="profile hidden-xs" src="img/otherpages/profile.png" alt="">Renato Martins</p></a>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-4">
+                                                <p class="t3">R$ 350,00</p>
+                                            </div>
+                                        </div>
+                                    </div><!--item-->
+                                    <div class="item"><!--item-->
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-2 text-center">
+                                                <p class="t1">07/04</p>
+                                            </div>
+                                            <div class="col-md-7 col-sm-7 col-xs-6">
+                                                <a href="#"><p class="t2"><img class="profile hidden-xs" src="img/otherpages/profile.png" alt="">Renato Martins</p></a>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-4">
+                                                <p class="t3">R$ 350,00</p>
+                                            </div>
+                                        </div>
+                                    </div><!--item-->
+                                    <div class="item"><!--item-->
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-2 text-center">
+                                                <p class="t1">07/04</p>
+                                            </div>
+                                            <div class="col-md-7 col-sm-7 col-xs-6">
+                                                <a href="#"><p class="t2"><img class="profile hidden-xs" src="img/otherpages/profile.png" alt="">Renato Martins</p></a>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-4">
+                                                <p class="t3">R$ 350,00</p>
+                                            </div>
+                                        </div>
+                                    </div><!--item-->
+                                    <div class="item"><!--item-->
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-2 text-center">
+                                                <p class="t1">07/04</p>
+                                            </div>
+                                            <div class="col-md-7 col-sm-7 col-xs-6">
+                                                <a href="#"><p class="t2"><img class="profile hidden-xs" src="img/otherpages/profile.png" alt="">Renato Martins</p></a>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-4">
+                                                <p class="t3">R$ 350,00</p>
+                                            </div>
+                                        </div>
+                                    </div><!--item-->
+                                    <div class="item"><!--item-->
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-2 text-center">
+                                                <p class="t1">07/04</p>
+                                            </div>
+                                            <div class="col-md-7 col-sm-7 col-xs-6">
+                                                <a href="#"><p class="t2"><img class="profile hidden-xs" src="img/otherpages/profile.png" alt="">Renato Martins</p></a>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-4">
+                                                <p class="t3">R$ 350,00</p>
+                                            </div>
+                                        </div>
+                                    </div><!--item-->
+                                </div>
+                            </div><!--table-body-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Javascript imports-->
+        <script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8" ></script>
+        <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8" ></script>
+        <script src="js/effects.js" type="text/javascript" charset="utf-8" ></script>
+
+    </body>
+</html>
+

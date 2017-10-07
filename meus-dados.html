@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Trajano Reuter">
+        <title>Meus Dados</title>
+
+        <!--CSS imports-->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <link rel="stylesheet" type="text/css" href="css/style2.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive-style2.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/hover-min.css" media="all">
+
+    </head>
+    <body>
+
+        <header class="active">
+            <div class="container">
+                <nav class="desk hidden-xs">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-4">
+                            <ul class="list-unstyled list-inline">
+                                <li><a class="logo" href="index.html"><img src="img/otherpages/logo.png" alt="" class="logo"></a></li>
+                                <li class="menu">Menu</li>
+                                <div class="menu-drop">
+                                    <div class="x">
+                                    <p>Careca</p>
+                                    <p>Careca</p>
+                                    <p>Careca</p>
+                                    <p>Careca</p>
+                                    <p>Careca</p>
+                                    <p>Careca</p>
+                                    <p>Careca</p>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="col-md-7 col-sm-8">
+                            <div class="row">
+                                <div class="col-md-8 col-sm-5">
+                                    <img src="img/otherpages/lupa.png" alt="" class="lupa">
+                                    <form action="" method="POST">
+                                        <input type="text" placeholder="Encontre um Contato">
+                                    </form>
+                                </div>
+                                <div class="col-md-1 col-sm-2 text-center">
+                                    <a href="#"><img src="img/otherpages/sino.png" alt="" class="sino"></a>
+                                </div>
+                                <div class="col-md-1 col-sm-2 text-center">
+                                    <a href="#"><img src="img/otherpages/profile.png" alt="" class="profile"></a>
+                                </div>
+                                <div class="col-md-2 col-sm-3 text-center">
+                                    <a class="exit" href="#"><p>Sair<img src="img/otherpages/exit.png" alt="" class="exit"></p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <nav class="mobile visible-xs">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <a class="logo" href="index.html"><img src="img/otherpages/logo.png" alt="" class="logo"></a>
+                        </div>
+                        <div class="col-xs-8">
+                            <form action="" method="POST">
+                                <input type="text" placeholder="Encontre um Contato">
+                            </form>
+                            <button type="button" id="mobile-btn"></button>
+                            <button type="button" id="lupa-btn"></button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div id="menu-mobile" class="visible-xs">
+            <div class="row text-center">
+                <div class="col-xs-12">
+                    <a href="#"><img src="img/otherpages/profile.png" alt="" class="profile"></a>
+                    <h3>Menu</h3>
+                    <ul class="list-unstyled list-inline">
+                        <a href="#"><li>Careca</li></a>
+                        <a href="#"><li>Careca</li></a>
+                        <a href="#"><li>Careca</li></a>
+                        <a href="#"><li>Careca</li></a>
+                        <a href="#"><li>Careca</li></a>
+                        <a href="#"><li>Careca</li></a>
+                        <a href="#"><li><img src="img/otherpages/sino.png" alt="" class="sino"></li></a>
+                    </ul>
+                    <a class="exit" href="#"><h3>Sair</h3></a>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div class="container">
+                <h3>Meus Dados</h3>
+                <div class="my-data-box">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-6 col-xs-12">
+                            <h4>Dados Pessoais</h4>
+                            <form action="" method="POST">
+                                <label for="nome">Cliente</label>
+                                <input name="nome" id="nome" type="text" value="José Carlos da Silva">
+                                <label for="email">Email de cadastro</label>
+                                <input name="email" id="email" type="text" value="Jc.silva@gmail.com">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12 col-xs-12">
+                                        <label for="asenha">Alterar senha</label>
+                                        <input name="asenha" id="asenha " type="password">
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-xs-12">
+                                        <label for="asenha2">Confirmar nova senha</label>
+                                        <input name="asenha2" id="asenha2 " type="password">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12 col-xs-12">
+                                        <button class="cancel" type="button">Cancelar</button>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-xs-12">
+                                        <button class="submit" type="submit">Salvar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-7 col-sm-6 col-xs-12">
+                            <h4>Informações de empreendedor</h4>
+                            <p class="t1">Seu nível de empreendedor</p>
+                            <p class="t2"><img src="img/otherpages/diamante.png" alt="">Esmeralda Plus</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Javascript imports-->
+        <script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8" ></script>
+        <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8" ></script>
+        <script src="js/effects.js" type="text/javascript" charset="utf-8" ></script>
+
+    </body>
+</html>
